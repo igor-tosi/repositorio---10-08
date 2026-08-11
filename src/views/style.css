@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2ff;
+}
+
+.aplicacao {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.cartao, .lista-tarefas-container {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.formulario-tarefa, .campo, .acoes, .lista-tarefas, .item-tarefa, .conteudo-tarefa, .acoes-tarefa {
+  display: grid;
+  gap: 12px;
+}
+
+input, textarea, button {
+  font: inherit;
+}
+
+input, textarea {
+  width: 95%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 12px;
+  resize: none;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.botao-secundario {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.botao-editar {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.botao-excluir {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.cabecalho-lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.lista-tarefas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-tarefa {
+  grid-template-columns: 1fr auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.item-tarefa.concluida {
+  background: #ecfdf5;
+}
+
+.conteudo-tarefa {
+  grid-template-columns: auto 1fr;
+  align-items: start;
+}
+
+.conteudo-tarefa input {
+  width: auto;
+}
+
+.titulo-tarefa {
+  margin: 0 0 4px;
+}
+
+.descricao-tarefa,
+.meta-tarefa,
+.mensagem-status {
+  color: #6b7280;
+}
+
+.descricao-tarefa {
+  margin: 0;
+}
+
+.meta-tarefa {
+  margin: 0 0 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.acoes-tarefa {
+  grid-auto-flow: column;
+}
+
+.estado-vazio {
+  padding: 16px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.escondido {
+  display: none;
+}
