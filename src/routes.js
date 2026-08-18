@@ -47,7 +47,7 @@ router.put('/tarefas/:id', async (req, res) => {
 
     const bancoDeDados = await conectarBancoDeDados();
 
-    const tarefaSolicitadaPeloUsuario = await bancoDeDados.all("SELECT * FROM tarefas WHERE id = ?", [id]);
+    const tarefaSolicitadaPeloUsuario = await bancoDeDados.get("SELECT * FROM tarefas WHERE id = ?", [id]);
 
     if (!tarefaSolicitadaPeloUsuario) {
         return res.status(400).json({ mensagem: "Tarefa não existe"})

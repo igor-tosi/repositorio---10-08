@@ -98,9 +98,18 @@ button {
 }
 
 .descricao-tarefa,
-.meta-tarefa,
-.mensagem-status {
+.meta-tarefa {
   color: #6b7280;
+}
+
+.mensagem-status {
+  color: #16a34a;
+  margin-top: 10px;
+  transition: opacity 0.3s;
+}
+
+.mensagem-status.erro {
+  color: #dc2626;
 }
 
 .descricao-tarefa {
